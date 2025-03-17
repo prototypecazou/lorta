@@ -1,0 +1,480 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+:root {
+    /* 🎨 Couleurs */
+    --text-color: white;
+    --background-color: #0A0A0A;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 1.2vw;
+}
+
+body{
+    background-color:  var(--background-color);
+}
+
+.home{
+   /* 100vh moins la hauteur du header */
+    display: flex;
+   align-items: end;
+   justify-content: space-between;
+   padding: 0 1rem;
+   margin-top: 5vh;
+   min-height: 100vh;
+}
+
+.content-title{
+    margin-top: auto;
+    padding-top: 5rem;
+}
+
+.cbd-title{
+    writing-mode: vertical-lr;
+    color:var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    font-family: var(--font-secondary);
+}
+
+.society{
+    font-size: 14vw;
+    letter-spacing: 1.4rem;
+    color: var(--text-color);
+    overflow: hidden;
+    font-family: var(--font-primary);
+    margin-top: 3rem;
+}
+
+.content-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centre horizontalement le contenu */
+       /* Prend toute la hauteur de la vue */
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    width: 22vw;
+    margin-bottom: 3rem;
+}
+
+.socials{
+    display: flex;
+    gap:1rem;
+    align-self: flex-end;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 3rem;
+}
+
+.social-circle{
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.first-section{
+    display: flex;
+    color:white;
+    justify-content: space-around;
+    padding: 0 1rem;
+    margin:12rem 0;
+}
+
+.first-content-left > h2{
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 0.8;
+}
+
+.first-content-left {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-first-section,.second-image-section {
+    width: 30rem;
+    height: 36rem;
+    object-fit: cover;
+}
+
+.first-content-right {
+    flex: 0 0 25%;
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first-text-content-right > h3{
+    font-size: 0.9rem;
+}
+
+.first-text-content-right > p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    padding-right: 2rem;
+}
+
+.line{
+    width: 100%;
+    height: 0.05rem;
+    background-color: white;
+}
+
+.bloc-philosophy > h4{
+margin-bottom: 1rem;
+font-size: 0.9rem;
+}
+
+.content-philosophy{
+    display: flex;
+    flex-direction: column;
+    gap:0.4rem;
+    padding-bottom: 1rem;
+}
+
+.philosophy span{
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.8rem;
+}
+
+.second-section{
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem
+}
+
+.second-littleImage-bloc{
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.second-content-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloc-second-title-section,.bloc-second-text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bloc-second-title-section{
+    flex: 0 0 20%
+}
+
+.second-content-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    gap:0.6rem
+}
+
+.second-content-title span:first-child{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.second-content-title span:last-child{
+    font-size: 0.7rem;
+}
+
+.bloc-second-title-section > h2{
+    font-size: 4rem;
+    line-height: 1;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bloc-second-text-section{
+    flex: 0 0 20%
+}
+
+.second-text-section > p {
+    font-size: 0.7rem;
+    margin-bottom: 4rem;
+    padding-right: 4rem;
+}
+
+.second-text-section > a{
+    background-color: #D9D9D9;
+    color:#0A0A0A;
+    padding:0.3rem 2rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+}
+
+.third-section{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    padding:0 2rem;
+    margin: 8rem 0;
+}
+
+.informations-command{
+    display: flex;
+    justify-content: center;
+    gap:5rem
+}
+
+.information-command{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 15%;
+}
+
+.information-command > img{
+    width: 75%;
+}
+
+.information-command > span{
+    font-size: 1rem;
+    font-weight: bold;
+    margin:1rem 0;
+    text-align: center;
+}
+
+.information-command > p{
+   text-align: center;
+   font-size: 0.8rem;
+}
+
+.ancre-flower{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    align-self: flex-end;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+
+.ancre-flower > img{
+width: 1rem;
+background-color: white;
+border-radius: 100%;
+}
+
+.fourth-section{
+    display: flex;
+    color:white;
+    padding: 0 2rem;
+    justify-content: space-between;
+}
+
+.fourth-section > img{
+width: 30rem;
+height: 36rem;
+object-fit: cover;
+}
+
+.bloc-fourth-subtitle-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 18%
+}
+
+.fourth-content-subtitle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.fourth-content-subtitle span:first-child {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.fourth-content-subtitle  span:last-child {
+font-size: 0.7rem;
+}
+
+.bloc-fourth-subtitle-img > img{
+width: 100%;
+height: 17rem;
+object-fit: cover;
+}
+
+.bloc-fourth-content-title-text{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    flex:0 0 30%
+}
+
+.bloc-fourth-content-title-text > h2{
+    font-size: 4rem;
+    line-height: 1;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bloc-fourth-content-title-text > p
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  padding-right: 2rem;
+}
+
+.bloc-fourth-content-title-text > a{
+    background-color: #D9D9D9;
+    color: #0A0A0A;
+    padding: 0.3rem 2rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    align-self: flex-start;
+}
+
+.fifth-section{
+    display: flex;
+    gap:2rem;
+    color:white;
+    padding: 0 2rem;
+    margin: 12rem 0;
+}
+
+.img-fifth-section{
+    width: 30rem;
+    object-fit: cover;
+}
+
+.content-principale-fifth-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-img-fifth-section{
+    display: flex;
+    gap:2rem;
+}
+
+.content-img-fifth-section > img{
+    width: 18rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.content-text-fifth-section{
+    padding-left: 4rem;
+    padding-bottom: 3rem;
+}
+
+.content-text-fifth-section > h2{
+    font-size: 3.8rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 2rem;
+    padding-right: 10rem;
+}
+
+.content-text-fifth-section > p{
+    padding-right: 10rem;
+    font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+}
+
+.sixth-section{
+    display: flex;
+    padding: 0 2rem;
+    color:white;
+    justify-content: space-between;
+}
+
+.content-text-sixth-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 43%;
+}
+
+.content-text-sixth-section >div{
+    padding-left: 2rem;
+}
+
+.content-text-sixth-section >div> h2{
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 2rem;
+}
+
+.content-text-sixth-section >div> p{
+    font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+}
+
+
+
+.content-text-sixth-section > img{
+    width: 22rem;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.content-img-sixth-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-img-sixth-section > img{
+    width: 30rem;
+    height: 36rem;
+    object-fit: cover;
+}
+
+.content-img-sixth-section > a {
+    background-color: #D9D9D9;
+    color: #0A0A0A;
+    padding: 0.3rem 2rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    align-self: flex-end;
+    margin-top: 4rem;
+}
+
+.seven-section{
+    display: flex;
+    color:white;
+    margin-top: 12rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.title-seven-section > h2{
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contents-seven-section{
+    flex: 0 0 50%;
+}
+
+.content-seven-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 1rem 0;
+}
+.content-seven-section > img{
+    width: 1rem;
+}
