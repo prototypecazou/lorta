@@ -1,0 +1,56 @@
+.third-section{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    padding:0 2rem;
+    margin: 8rem 0;
+}
+
+.informations-command{
+    display: flex;
+    justify-content: center;
+    gap:5rem
+}
+
+.information-command{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 15%;
+}
+
+.information-command > img{
+    width: 75%;
+}
+
+
+.filter-black{
+    filter:brightness(0)
+}
+
+.information-command > span{
+    font-size: 1rem;
+    font-weight: bold;
+    margin:1rem 0;
+    text-align: center;
+}
+
+.information-command > p{
+   text-align: center;
+   font-size: 0.8rem;
+}
+
+.ancre-flower{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    align-self: flex-end;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+
+.ancre-flower > img{
+width: 1rem;
+background-color: white;
+border-radius: 100%;
+}

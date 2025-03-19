@@ -6,6 +6,9 @@
     <title><%= title %></title>
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/homeStyle.css">
+    <link rel="stylesheet" href="/css/informations-command.css">
+    <link rel="stylesheet" href="/css/card-product.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
 
@@ -42,36 +45,7 @@
                 <div class="products">
                     <div>
                         <h3 class="subtitle-products">Sélection exclusive de fleurs de cbd qualité premium</h3>
-                        <div class="content-cards-products">
-                            <div class="card-product">
-                                <img class="head-cbd" src="/images/head-cbd.png"/>
-                                <div class="description-product">
-                                    <h4>AMNESIA PUSH</h4>
-                                    <p>La 49.3 de la marque Easy Weed est une fleur de CBD exceptionnelle, soigneusement cultivée en greenhouse en Suisse. Avec un taux de 13% de CBD, cette variété indica est parfaite.</p>
-                                </div>
-                                <a href=""> Voir la fleur </a>
-                            </div>
-    
-                            <div class="card-product">
-                                <img class="head-cbd" src="/images/head-cbd.png"/>
-                                <div class="description-product">
-                                    <h4>AMNESIA PUSH</h4>
-                                    <p>La 49.3 de la marque Easy Weed est une fleur de CBD exceptionnelle, soigneusement cultivée en greenhouse en Suisse. Avec un taux de 13% de CBD, cette variété indica est parfaite.</p>
-                                </div>
-                                <a href=""> Voir la fleur </a>
-                            </div>
-    
-                            <div class="card-product">
-                                <img class="head-cbd" src="/images/head-cbd.png"/>
-                                <div class="description-product">
-                                    <h4>AMNESIA PUSH</h4>
-                                    <p>La 49.3 de la marque Easy Weed est une fleur de CBD exceptionnelle, soigneusement cultivée en greenhouse en Suisse. Avec un taux de 13% de CBD, cette variété indica est parfaite.</p>
-                                </div>
-                                <a href=""> Voir la fleur </a>
-                            </div>
-    
-    
-                        </div>
+                        <%- include('../partials/card-product.ejs',{backgroundColor:'',textColorBlack:'',textColorWhite:''}) %>
                     </div>
 
 
@@ -211,7 +185,7 @@
 
             </section>
 
-            <section class="third-section">
+            <!--<section class="third-section">
                 <div class="informations-command">
                     <div class="information-command">
                         <img src="/images/securePayment.png"/>
@@ -239,7 +213,9 @@
                     <img src="/images/arrow-black-right.png"/>
                 </a>
 
-            </section>
+            </section>-->
+
+            <%- include('../partials/informations-command',{color:'',textColor:''}) %>
 
             <section class="fourth-section">
                 <div class="bloc-fourth-subtitle-img">
@@ -276,7 +252,7 @@
                 </div>
             </section>
 
-            <!--<section class="sixth-section">
+            <section class="sixth-section">
                 <div class="content-text-sixth-section">
                     <div>
                         <h2>CRAFT YOUR VISION </h2>
@@ -291,7 +267,7 @@
                     <img src="/images/img1.jpg"/>
                     <a>Voir nos fleurs</a>
                 </div>
-            </section>-->
+            </section>
 
             <section class="seven-section">
                 <div class="title-seven-section">
@@ -334,6 +310,7 @@
             </section>
         </main>
 
+        <%- include('../partials/footer') %>
 
 
 <script src="/js/lenis.min.js"></script>

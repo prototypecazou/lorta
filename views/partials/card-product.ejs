@@ -1,0 +1,21 @@
+<div class="content-cards-products ">
+
+    <% products.forEach(product => { %>
+
+        <a href="/fleurs-cbd/<%= product.id %>" class="card-product">
+            <div class="<%= backgroundColor %>">
+                <img class="head-cbd" src="/images/head-cbd.png"/>
+            </div>
+            <div class="description-product <%= textColorBlack %>">
+                <h4>AMNESIA PUSH</h4>
+                <p>La 49.3 de la marque Easy Weed est une fleur de CBD exceptionnelle, soigneusement cultivée en greenhouse en Suisse.</p>
+            </div>
+            <div class="informations-product">
+                <span class="<%= backgroundColor %> <%= textColorWhite %>">3e / g</span>
+                <span class="<%= backgroundColor %> <%= textColorWhite %>">indoor</span>
+            </div>
+            <button class="<%= backgroundColor %> <%= textColorWhite %>" href="/fleurs-cbd/<%= product.id %>"> Voir la fleur </button>
+        </a>
+    <% }) %>
+
+</div>

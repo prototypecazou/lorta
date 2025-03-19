@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/information-command.css">
+    <link rel="stylesheet" href="/css/card-product.css">
+</head>
+<body>
+
+    <main>
+        <div class="product-page">
+            <!-- Section Header -->
+            <div class="product-header">
+                <div class="product-header-top">
+                    <img class="logo" src="/images/logoLorta.png" alt="Logo Lorta"/>
+                    <img class="product-main-image" src="/images/head-cbd.png" alt="Image principale du produit"/>
+                    <div class="header-buttons">
+                        <button class="btn-icon">
+                            <img class="btn-icon-img" src="/images/arrow.png" alt="Bouton 1"/>
+                        </button>
+                        <button class="btn-icon">
+                            <img class="btn-icon-img" src="/images/arrow.png" alt="Bouton 2"/>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-header-images">
+                    <div class="thumbnail">
+                        <img src="/images/head-cbd.png" alt="Miniature 1"/>
+                    </div>
+
+                    <div class="thumbnail">
+                        <img src="/images/head-cbd.png" alt="Miniature 1"/>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="/images/head-cbd.png" alt="Miniature 1"/>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Section Détails Produit -->
+            <div class="product-details">
+
+                <div class="product-title">
+                    <h1>AMNESIA PUSH</h1>
+                </div>
+
+        
+                <div class="product-pricing">
+                    <span class="price">8€ / G</span>
+                    <span class="product-category">CBD PREMIUM</span>
+                </div>
+        
+                <div class="product-description">
+                    <h2 class="description-title">DESCRIPTION</h2>
+                    <p class="description-text">
+                        Le cannabidiol ou « CBD » disponible en accès libre se distingue des traitements médicaux à base de cannabis, 
+                        prescrits sur ordonnance à des patients bénéficiant d’un suivi médical. Le point sur les risques liés à son 
+                        utilisation et sur les recommandations à suivre.
+                    </p>
+                </div>
+        
+                <div class="product-stock">
+                    <div class="stock-info">
+                        <h2 class="stock-title">POIDS</h2>
+                        <span class="stock-quantity">22 grammes en stock</span>
+                    </div>
+
+                    <div class="product-quantity">
+                        <div class="heptagon-border">
+                            <div class="heptagon">
+                                <span>3</span>
+                            </div>
+                        </div>
+                        <div class="heptagon-border">
+                            <div class="heptagon">
+                                <span>5</span>
+                            </div>
+                        </div>
+                        <div class="heptagon-border">
+                            <div class="heptagon">
+                                <span>10</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="product-composition">
+                    <div class="composition-item">
+                        <h3 class="composition-title">CBD</h3>
+                        <span class="composition-value">10%</span>
+                    </div>
+                    <div class="composition-item">
+                        <h3 class="composition-title">THC</h3>
+                        <span class="composition-value"> <= 0.3%</span>
+                    </div>
+                    <div class="composition-item">
+                        <h3 class="composition-title">CULTURE</h3>
+                        <span class="composition-value">indoor</span>
+                    </div>
+                </div>
+        
+                <div class="product-actions">
+                    <div class="product-extra-images">
+                        <img class="extra-image" src="/images/paypal-logo.png" alt="Image supplémentaire 1"/>
+                        <img class="extra-image" src="/images/gpay-logo.png" alt="Image supplémentaire 2"/>
+                    </div>
+                    <button class="add-to-cart-btn">AJOUTER AU PANIER</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="fleur-cbd-container">
+            <div class="fleur-cbd-description">
+                <h2 class="fleur-cbd-title">A PROPOS DE CETTE FLEUR CBD</h2>
+                <p class="fleur-cbd-text">
+                    Le cannabidiol ou « CBD » disponible en accès libre se distingue des 
+                    traitements médicaux à base de cannabis, prescrits sur ordonnance à des 
+                    patients bénéficiant d’un suivi médical. Le point sur les risques liés à son 
+                    utilisation et sur les recommandations à suivre.
+                </p>
+            </div>
+
+            <div class="fleur-cbd-characteristics">
+                <h2 class="fleur-cbd-title">CARACTERISTIQUES</h2>
+                <div class="fleur-cbd-feature">
+                    <div class="fleur-cbd-feature-item">
+                        <img class="fleur-cbd-icon" src="/images/light.png"/>
+                        <span class="fleur-cbd-label">Indoor</span>
+                    </div>
+                    <div class="fleur-cbd-feature-item">
+                        <img class="fleur-cbd-icon" src="/images/light.png"/>
+                        <span class="fleur-cbd-label">Indoor</span>
+                    </div>
+                    <div class="fleur-cbd-feature-item">
+                        <img class="fleur-cbd-icon" src="/images/light.png"/>
+                        <span class="fleur-cbd-label">Indoor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fleur-cbd-reviews">
+            <h3 class="fleur-cbd-reviews-title">Lisez ce que les clients disent<br> à propos de cette fleur</h3>
+            <button class="fleur-cbd-reviews-button">DONNEZ VOTRE AVIS</button>
+        </div>
+
+        <div class="reviews">
+            <span class="not-reviews">Aucun Avis pour cette fleur soyez le premier !</span>
+        </div>
+
+        <%- include('../partials/informations-command',{color:'filter-black',textColor:'text-black'}) %>
+
+        <div>
+            <h2>Choose from our curatedplant collection,designed to fit every lifestyle</h2>
+            <%- include('../partials/card-product.ejs',{backgroundColor:'background-black',textColorBlack:'text-black',textColorWhite:'text-white'}) %>
+        </div>
+    </main>
+
+    <script src="/js/lenis.min.js"></script>
+    <script type="module" src="/js/smoothScroll.js"></script>
+</body>
+</html>

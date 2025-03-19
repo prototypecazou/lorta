@@ -1,5 +1,22 @@
 gsap.registerPlugin(ScrollTrigger);
 
+let lastScrollTop = 0;
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // Scrolling vers le bas → Cacher le header
+        gsap.to(header, { y: -100,opacity:0, duration: 0.5, ease: "power2.out" });
+    } else {
+        // Scrolling vers le haut → Réafficher le header
+        gsap.to(header, { y: 0,opacity:1, duration: 0.5, ease: "power2.out" });
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+
 gsap.to(".word-title-first-section", {
     y: 0,
     duration: 1.8,

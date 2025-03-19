@@ -16,6 +16,10 @@ app.use(express.static('public')); // Fichiers statiques (CSS, JS, images)
 const homeRoutes = require('./routes/home');
 app.use('/', homeRoutes);
 
+const productRoutes = require("./routes/product");
+app.use("/fleurs-cbd", productRoutes);
+
+
 const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Serveur lancé sur http://localhost:${PORT}`);
