@@ -31,8 +31,7 @@ body{
 }
 
 .content-title{
-    margin-top: auto;
-    padding-top: 5rem;
+padding-top: 5rem;
 }
 
 .cbd-title{
@@ -41,15 +40,6 @@ body{
     font-size: 1rem;
     letter-spacing: 0.2rem;
     font-family: var(--font-secondary);
-}
-
-.society{
-    font-size: 14vw;
-    letter-spacing: 1.4rem;
-    color: var(--text-color);
-    overflow: hidden;
-    font-family: var(--font-primary);
-    margin-top: 3rem;
 }
 
 .content-logo {
@@ -64,23 +54,6 @@ body{
 .logo{
     width: 22vw;
     margin-bottom: 3rem;
-}
-
-.socials{
-    display: flex;
-    gap:1rem;
-    align-self: flex-end;
-    flex-direction: column;
-    margin-top: auto;
-    margin-bottom: 3rem;
-}
-
-
-.social-circle{
-    width: 2rem;
-    height: 2rem;
-    background-color: white;
-    border-radius: 100%;
 }
 
 .section-products{
@@ -121,7 +94,7 @@ margin-bottom: 1rem;
 padding-left: 1rem;
 }
 
-.content-cards-products{
+/*.content-cards-products{
     display: flex;
     gap:1.2rem
 }
@@ -132,7 +105,7 @@ padding-left: 1rem;
     display: flex;
     flex-direction: column;
     padding: 1rem 1.2rem;
-}*/
+}
 
 .card-product{
     background-color: #0a0a0a;
@@ -154,7 +127,6 @@ padding-left: 1rem;
 
 .head-cbd{
     width: 50%;
-    /*align-self: center;*/
       margin: auto;
 }
 
@@ -197,8 +169,7 @@ padding-left: 1rem;
     margin-top: 2rem;
     font-weight: 800;
     border:none
-}
-
+}*/
 .first-section{
     display: flex;
     color:white;

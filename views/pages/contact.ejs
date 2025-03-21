@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/footer.css">
+</head>
+<body>
+    <%- include('../partials/header') %>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h1 class="contact-title">Contact</h1>
+                <p class="contact-description">Une question, besoin d'informations complémentaires ?</p>
+        
+                <div class="contact-socials">
+                    <div class="social-icon social-facebook"></div>
+                    <div class="social-icon social-instagram"></div>
+                    <div class="social-icon social-twitter"></div>
+                </div>
+        
+                <div class="contact-email">
+                    <img class="contact-email-icon" src="/images/email.png" alt="Email Icon"/>
+                    <span class="contact-email-text">Lorta-cbd@gmail.com</span>
+                </div>
+            </div>
+        
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Votre prenom" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Votre email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Votre message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-submit-btn">Envoyer</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <%- include('../partials/footer',{textColor:'',backgroundColor:''}) %>
+
+
+    <script src="/js/lenis.min.js"></script>
+    <script type="module" src="/js/smoothScroll.js"></script>
+</body>
+</html>

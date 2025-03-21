@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/product.css">
     <link rel="stylesheet" href="/css/information-command.css">
     <link rel="stylesheet" href="/css/card-product.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
 
@@ -155,11 +156,14 @@
 
         <%- include('../partials/informations-command',{color:'filter-black',textColor:'text-black'}) %>
 
-        <div>
+        <div class="section-products">
             <h2>Choose from our curatedplant collection,designed to fit every lifestyle</h2>
             <%- include('../partials/card-product.ejs',{backgroundColor:'background-black',textColorBlack:'text-black',textColorWhite:'text-white'}) %>
         </div>
     </main>
+
+    
+    <%- include('../partials/footer',{textColor:'text-black',backgroundColor:'background-black'}) %>
 
     <script src="/js/lenis.min.js"></script>
     <script type="module" src="/js/smoothScroll.js"></script>
